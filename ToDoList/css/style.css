@@ -1,0 +1,108 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: static;
+    height: 50px;
+    width: 1300px;
+    background: #db4d40;
+}
+
+.header span {
+    color: white;
+    font: 24px AppleSDGothicNeoB00;
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.sidebar{
+    height: 700px;
+    width: 300px;
+    background: #f2f2f2;
+    float: left;
+}
+
+.mainContent {
+    background: white;
+    box-sizing: border-box;
+    border: 1px solidl black;
+    height: 700px;
+    width: 1000px;
+    float: left;
+}
+
+#add {
+    color: #f6cece;
+}
+
+#add span {
+    display: inline-block;
+    height: 32px;
+}
+
+#addIcon {
+    float: left;
+    line-height: 32px;
+    font-size: 32px;
+    font-family: AppleSDGothicNeoB00;
+    margin: 10px 10px 10px 15px;
+}
+
+#addText {
+    float : left;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 10px 0px 10px 5px;
+    font-family: AppleSDGothicNeoR00;
+}
+
+#add:hover{
+    color: #db4d40;
+    cursor: pointer;
+}
+
+#taskInput {
+    opacity : 0;
+    margin: 10px 0px 10px 10px;
+}
+
+#taskInput input{
+    font-family: AppleSDGothicNeoR00;
+}
+
+.addTaskDisappear {
+    animation: addTaskDisappear ease .5s;
+    animation-fill-mode: forwards;
+}
+
+.taskInputAppear {
+    animation: taskInputAppear ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes addTaskDisappear {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        margin-left: 30px;
+    }
+}
+
+@keyframes taskInputAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
