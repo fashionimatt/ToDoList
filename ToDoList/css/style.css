@@ -31,13 +31,14 @@
 .mainContent {
     background: white;
     box-sizing: border-box;
-    border: 1px solidl black;
     height: 700px;
     width: 1000px;
     float: left;
 }
 
 #add {
+    height: 40px;
+    width: 200px;
     color: #f6cece;
 }
 
@@ -68,14 +69,57 @@
 }
 
 #taskInput {
-    opacity : 0;
-    margin: 10px 0px 10px 10px;
+    float: left;
+    display: none;
+    opacity: 0;
+    margin: 10px 0px 10px 0px;
 }
 
-#taskInput input{
+#taskInput>input{
+    height: 24px;
+    width : 500px;
     font-family: AppleSDGothicNeoR00;
 }
 
+.tasks{
+}
+
+.tasks ul {
+    margin-top: 10px;
+}
+
+    .tasks ul li {
+        margin-bottom: 15px;
+        list-style : none;
+    }
+
+        .tasks ul li input[type="checkbox"] {
+            display: none;
+        }
+
+            .tasks ul li input[type="checkbox"] + label {
+                width: 17px;
+                height: 17px;
+                background: #db4d40;
+                cursor: pointer;
+                border-radius: 3px;
+                float: left;
+            }
+
+            .tasks ul li input[type="checkbox"]:checked + label {
+                background: url(../images/check.png) #db4d40 no-repeat center/10px 10px;
+                float: left;
+            }
+
+            .tasks ul li input[type="checkbox"] + label span {
+                position: absolute;
+                left: 0px;
+                display: block;
+            }
+
+
+
+/*Animation*/
 .addTaskDisappear {
     animation: addTaskDisappear ease .5s;
     animation-fill-mode: forwards;

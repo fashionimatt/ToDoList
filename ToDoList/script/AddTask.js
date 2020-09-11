@@ -1,12 +1,16 @@
-﻿let addIcon = document.querySelector("#add");
+﻿let add = document.querySelector("#add");
+let addText = document.querySelector("#addText");
 let taskInput = document.querySelector("#taskInput");
 
-addIcon.addEventListener("click", function () {
-    addIcon.classList.add("addTaskDisappear");
+add.addEventListener("click", function () {
+    addText.classList.add("addTaskDisappear");
+    taskInput.style.display = "inline-block";
     
     setTimeout(function () {
-        addIcon.style.display = "none";
-        addIcon.classList.remove("addTaskDisappear")
+        addText.style.display = "none";
+        addText.classList.remove("addTaskDisappear")
         taskInput.classList.add("taskInputAppear");
     }, 500);
+
+    
 })
