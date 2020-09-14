@@ -3,6 +3,7 @@
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: AppleSDGothicNeoR00;
 }
 
 .header {
@@ -36,88 +37,74 @@
     float: left;
 }
 
-#add {
-    height: 40px;
-    width: 200px;
-    color: #f6cece;
+.taskInput{
+    margin: 20px 0px 0px 40px;
 }
 
-#add span {
-    display: inline-block;
-    height: 32px;
+#userInput{
+    width: 500px;
 }
 
-#addIcon {
-    float: left;
-    line-height: 32px;
-    font-size: 32px;
-    font-family: AppleSDGothicNeoB00;
-    margin: 10px 10px 10px 15px;
+#enter {
+    border: none;
+    margin: 0px 0px 0px 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #e9b8b8;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    font-weight: normal;
 }
 
-#addText {
-    float : left;
-    line-height: 30px;
-    font-size: 16px;
-    margin: 10px 0px 10px 5px;
+#enter:hover {
+    background-color: #db4d40;
+}
+
+ul{
+    text-align: left;
+    margin: 20px 0px 0px 0px;
+}
+
+li {
+    list-style: none;
+    padding: 0px 0px 10px 0px;
+    color: #000000;
     font-family: AppleSDGothicNeoR00;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 10px;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5 ease;
 }
 
-#add:hover{
+li:hover {
+    background: #ececec;
+}
+
+li > button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
     color: #db4d40;
-    cursor: pointer;
+    font-weight: 800;
 }
 
-#taskInput {
-    float: left;
-    display: none;
-    opacity: 0;
-    margin: 10px 0px 10px 0px;
+input {
+    border-radius:  5px;
+    min-width: 65%;
+    padding: 5px;
+    border: 1px solid #808080;
 }
 
-#taskInput>input{
-    height: 24px;
-    width : 500px;
-    font-family: AppleSDGothicNeoR00;
+.done {
+    text-decoration : line-through;
 }
-
-.tasks{
-}
-
-.tasks ul {
-    margin-top: 10px;
-}
-
-    .tasks ul li {
-        margin-bottom: 15px;
-        list-style : none;
-    }
-
-        .tasks ul li input[type="checkbox"] {
-            display: none;
-        }
-
-            .tasks ul li input[type="checkbox"] + label {
-                width: 17px;
-                height: 17px;
-                background: #db4d40;
-                cursor: pointer;
-                border-radius: 3px;
-                float: left;
-            }
-
-            .tasks ul li input[type="checkbox"]:checked + label {
-                background: url(../images/check.png) #db4d40 no-repeat center/10px 10px;
-                float: left;
-            }
-
-            .tasks ul li input[type="checkbox"] + label span {
-                position: absolute;
-                left: 0px;
-                display: block;
-            }
-
-
 
 /*Animation*/
 .addTaskDisappear {

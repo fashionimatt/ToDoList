@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/701c5d01a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -12,20 +13,19 @@
     <div class="sidebar">
     </div>
     <div class="mainContent">
-        <div id="add">
-            <span id="addIcon">+</span>
-            <span id="addText">Add Task</span>
+        <div class="row">
+            <div class="taskInput col-12">
+                <input id="userInput" type="text" placeHoler="New Task" maxlength="67" />
+                <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+            </div>
         </div>
-        <div id="taskInput">
-            <input type="text"/>
-        </div>
-        <div class="tasks">
-            <ul>
-                <li id="task0">
-                    <input type="checkbox" id="taskInput0"/>        
-                    <label for="taskInput0"><span>개발공부</span></label>
-                </li>
-            </ul>
+
+        <!--Empty List-->
+        <div class="row">
+            <div class="listItems col-12">
+                <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                </ul>
+            </div>
         </div>
     </div>
     <script src="script/AddTask.js"></script>
